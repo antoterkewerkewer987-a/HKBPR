@@ -8,20 +8,34 @@
 <style>
 
 body{
-background:#e5e5e5;
-font-family:"Times New Roman", serif;
 margin:0;
 padding:40px;
+font-family:"Times New Roman", serif;
+background:#e5e5e5;
 display:flex;
 justify-content:center;
 }
 
-/* Kertas surat */
+/* Background logo transparan */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url("logo.jpeg") center center no-repeat;
+background-size:500px;
+opacity:0.5;
+z-index:-1;
+}
+
+/* Kertas */
 .surat{
 width:900px;
 background:white;
 padding:50px;
-box-shadow:0 0 15px rgba(0,0,0,0.2);
+box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
 
 /* Header */
@@ -30,7 +44,7 @@ text-align:center;
 }
 
 .logo{
-width:130px;
+width:140px;
 margin-bottom:10px;
 }
 
@@ -41,14 +55,12 @@ color:#1e63d6;
 letter-spacing:2px;
 }
 
-/* Garis surat */
 .line{
 height:4px;
 background:black;
 margin:20px 0 30px 0;
 }
 
-/* Isi surat */
 .text{
 font-size:19px;
 line-height:1.9;
@@ -56,20 +68,45 @@ text-align:justify;
 }
 
 .subjudul{
-font-size:24px;
+font-size:26px;
 font-weight:bold;
+margin-top:35px;
+}
+
+.list{
+font-size:19px;
+line-height:1.8;
+margin-left:20px;
+}
+
+/* Map section */
+
+.map{
 margin-top:30px;
 }
 
-</style>
+.map img{
+width:100%;
+border-radius:8px;
+margin-top:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
 
+.map-title{
+font-size:22px;
+font-weight:bold;
+margin-top:20px;
+}
+
+</style>
 </head>
+
 <body>
 
 <div class="surat">
 
 <div class="header">
-<img src="https://files.catbox.moe/jl1lf0.jpeg" class="logo">
+<img src="logo.jpeg" class="logo">
 <div class="title">PROFIL HKBPR</div>
 </div>
 
@@ -78,43 +115,50 @@ margin-top:30px;
 <div class="text">
 
 <p>
-HKBP Roblox (HKBPR) merupakan sebuah komunitas yang dibentuk di dalam platform permainan 
-<b>Roblox</b> sebagai wadah berkumpulnya para anggota yang memiliki semangat kebersamaan 
-serta nilai-nilai kekristenan sesuai dengan ajaran <b>Huria Kristen Batak Protestan (HKBP)</b>. 
-Komunitas ini hadir untuk menciptakan ruang persekutuan yang positif di dunia virtual, 
-di mana para anggota dapat saling mengenal, berbagi pengalaman, serta membangun 
-persaudaraan yang kuat.
+HKBP Roblox (HKBPR) merupakan sebuah komunitas gereja yang berada di dalam platform permainan 
+<b>Roblox</b>. Komunitas ini dibentuk sebagai tempat berkumpulnya para anggota yang ingin 
+membangun kebersamaan, pelayanan, dan nilai-nilai kekristenan di dunia virtual.
 </p>
 
 <p>
-HKBPR berada di bawah naungan komunitas <b>RCC</b> dan bertujuan menghadirkan kegiatan yang 
-mencerminkan pelayanan, kebersamaan, serta sikap saling menghormati antar anggota. 
-Walaupun berada dalam dunia permainan, komunitas ini tetap berusaha menghadirkan 
-suasana yang mencerminkan nilai-nilai gereja dan persaudaraan kristiani.
+HKBPR berada di bawah naungan komunitas <b>RCC</b> yang merupakan singkatan dari 
+<b>Roblox Counchil Churches</b>. RCC adalah sebuah komunitas yang berfokus pada pembangunan 
+map gereja, kegiatan komunitas, serta pengembangan persekutuan di dalam platform Roblox.
 </p>
 
-<div class="subjudul">Keistimewaan dan Kelebihan HKBPR</div>
+</div>
 
-<p>
-Beberapa kelebihan yang dimiliki oleh komunitas HKBPR antara lain:
+<div class="subjudul">Daftar Pemimpin RCC</div>
+
+<div class="list">
+1. AZEN (Founder)<br>
+2. YEVEN (Wakil Azen)
+</div>
+
+<div class="subjudul">Beberapa Map Yang Pernah Dibuat RCC (HKBP)</div>
+
+<div class="map">
+
+<div class="map-title">1. HKBP AJIBATA</div>
+
+<img src="Ajibata.jpeg">
+
+<p class="text">
+HKBP Ajibata merupakan salah satu map gereja HKBP yang dibuat oleh komunitas RCC di dalam Roblox.
+Map ini terinspirasi dari gereja HKBP Ajibata yang berada di daerah Ajibata, Sumatera Utara.
+Desain bangunan gereja ini dibuat dengan memperhatikan arsitektur gereja HKBP yang khas serta 
+suasana ibadah yang khidmat.
 </p>
 
-<p>
-1. Menjadi wadah bagi para pemain Roblox yang ingin membangun komunitas berbasis iman dan kebersamaan.<br><br>
+<div class="map-title">2. HKBP JATIASIH</div>
 
-2. Mengadakan berbagai kegiatan komunitas seperti ibadah virtual, diskusi rohani, dan pertemuan komunitas.<br><br>
+<img src="Jatiasih.jpeg">
 
-3. Menciptakan lingkungan yang positif, aman, serta menjunjung tinggi rasa hormat antar anggota.<br><br>
-
-4. Mengembangkan semangat pelayanan dan kerja sama dalam dunia digital.<br><br>
-
-5. Mempererat hubungan persaudaraan antar anggota komunitas di dalam maupun di luar permainan.
-</p>
-
-<p>
-Dengan adanya HKBPR, diharapkan setiap anggota dapat merasakan kebersamaan yang erat 
-serta tetap menjaga nilai-nilai iman, persaudaraan, dan pelayanan walaupun berada 
-dalam dunia virtual.
+<p class="text">
+HKBP Jatiasih merupakan salah satu map gereja yang juga dibuat oleh RCC di Roblox.
+Map ini terinspirasi dari gereja HKBP Jatiasih yang berada di daerah Jatiasih, Bekasi.
+Pembuatan map ini bertujuan untuk menghadirkan suasana gereja HKBP di dalam dunia virtual 
+agar para anggota dapat merasakan suasana persekutuan walaupun berada di dalam game.
 </p>
 
 </div>
