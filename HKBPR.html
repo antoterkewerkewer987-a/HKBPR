@@ -11,68 +11,57 @@ body{
 margin:0;
 padding:40px;
 font-family:"Times New Roman", serif;
-background:#e5e5e5;
+background:#dcdcdc;
 display:flex;
 justify-content:center;
 }
 
-/* Kertas dokumen */
+/* KERTAS DOKUMEN */
 
 .surat{
-width:900px;
-padding:50px;
-border:3px solid black;
-box-shadow:0 0 15px rgba(0,0,0,0.3);
-position:relative;
-overflow:hidden;
-background:white;
+
+width:850px;
+padding:60px;
+
+border:3px solid #000;
+
+box-shadow:0 0 20px rgba(0,0,0,0.25);
+
+background:
+linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),
+url("logo.jpeg");
+
+background-size:420px;
+background-repeat:no-repeat;
+background-position:center;
+
 }
 
-/* Logo watermark di kertas */
-
-.surat::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:url("logo.jpeg") center no-repeat;
-background-size:400px;
-opacity:0.5;
-z-index:0;
-}
-
-/* Isi dokumen di atas watermark */
-
-.surat > *{
-position:relative;
-z-index:1;
-}
-
-/* Header */
+/* HEADER */
 
 .header{
 text-align:center;
 }
 
 .logo{
-width:140px;
-margin-bottom:10px;
+width:110px;
+margin-bottom:8px;
 }
 
 .title{
-font-size:36px;
+font-size:34px;
 font-weight:bold;
-color:#1e63d6;
+color:#1f4fa3;
 letter-spacing:2px;
 }
 
 .line{
-height:4px;
+height:3px;
 background:black;
-margin:20px 0 30px 0;
+margin:18px 0 30px 0;
 }
+
+/* TEXT */
 
 .text{
 font-size:19px;
@@ -81,15 +70,15 @@ text-align:justify;
 }
 
 .subjudul{
-font-size:26px;
+font-size:24px;
 font-weight:bold;
 margin-top:35px;
 }
 
-/* LIST ANGGOTA FIX */
+/* LIST */
 
 .list{
-font-size:19px;
+font-size:18px;
 }
 
 .list ol{
@@ -97,30 +86,29 @@ padding-left:30px;
 }
 
 .list li{
-margin-bottom:8px;
-line-height:1.8;
+margin-bottom:6px;
 }
 
-/* Map */
+/* MAP */
 
 .map{
-margin-top:30px;
+margin-top:25px;
 }
 
 .map img{
 width:100%;
-border-radius:8px;
+border-radius:6px;
 margin-top:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
 .map-title{
-font-size:22px;
+font-size:21px;
 font-weight:bold;
 margin-top:20px;
 }
 
-/* Footer */
+/* FOOTER */
 
 .footer{
 margin-top:60px;
@@ -135,8 +123,11 @@ font-size:18px;
 <div class="surat">
 
 <div class="header">
+
 <img src="logo.jpeg" class="logo">
+
 <div class="title">PROFIL HKBPR</div>
+
 </div>
 
 <div class="line"></div>
@@ -146,7 +137,7 @@ font-size:18px;
 <p>
 HKBP Roblox (HKBPR) merupakan sebuah komunitas gereja yang berada di dalam platform permainan 
 <b>Roblox</b>. Komunitas ini dibentuk sebagai tempat berkumpulnya para anggota yang ingin 
-membangun kebersamaan, pelayanan, dan nilai-nilai kekristenan di dunia virtual.
+membangun kebersamaan, pelayanan, serta nilai-nilai kekristenan di dunia virtual.
 </p>
 
 <p>
@@ -160,17 +151,18 @@ map gereja, kegiatan komunitas, serta pengembangan persekutuan di dalam platform
 <div class="subjudul">Daftar Anggota HKBPR</div>
 
 <div class="list">
+
 <ol>
 <li>Pdt. David Simarmata, M.Th (Ephorus dan Pengurus HKBPR)</li>
 <li>St. Raymond Rajagukguk (Developer dan Sintua)</li>
-<li>St. Rendy Siagian (Sintua & Pemimpin Cyber Security Ajibata)</li>
+<li>St. Rendy Siagian (Sintua & Pemimpin Cyber Security Ajibata & Tim Pendukung)</li>
 <li>St. Morieno Hutagalung (Sintua)</li>
 <li>St. Milfa Purba (Sintua)</li>
 <li>St. Rendy Adicipto (Sintua)</li>
 <li>Pdt. Nihon Sinaga (Pendeta)</li>
 <li>Cst. Nonie Tambunan (Calon Sintua)</li>
 <li>Pdt. Glenn F. C. Purba, S.Th (Pendeta)</li>
-<li>St. Bona Sardo (Sintua)</li>
+<li>St. Bona Situmorang (Sintua)</li>
 <li>C.Pdt. Valentina Pakpahan (Calon Pendeta)</li>
 <li>C.Pdt. Timothy Simanjuntak (Calon Pendeta)</li>
 <li>Cst. Citra Sihombing (Calon Sintua)</li>
@@ -178,12 +170,13 @@ map gereja, kegiatan komunitas, serta pengembangan persekutuan di dalam platform
 <li>Cst. Sanggam Situmorang (Calon Sintua)</li>
 <li>Sdr. Eric Nababan (Saudara / Saudagar)</li>
 <li>Sdr. Kristian Pasaribu (Saudara / Saudagar)</li>
-<li>Cst. Agnes (Calon Sintua)</li>
+<li>St. Agnes Sitorus (Sintua)</li>
 <li>Pdt. Evan Situmorang, S.Th (Pendeta)</li>
 <li>Pdt. Gabriel Lukas Pardede, M.Th (Pendeta)</li>
 <li>Pdt. Frederick Matthew (Pendeta)</li>
 <li>St. Heber Pasaribu (Sintua)</li>
 </ol>
+
 </div>
 
 <div class="subjudul">Beberapa Map Yang Pernah Dibuat RCC (HKBP)</div>
@@ -197,8 +190,6 @@ map gereja, kegiatan komunitas, serta pengembangan persekutuan di dalam platform
 <p class="text">
 HKBP Ajibata merupakan salah satu map gereja HKBP yang dibuat oleh komunitas RCC di dalam Roblox.
 Map ini terinspirasi dari gereja HKBP Ajibata yang berada di daerah Ajibata, Sumatera Utara.
-Desain bangunan gereja ini dibuat dengan memperhatikan arsitektur gereja HKBP yang khas serta 
-suasana ibadah yang khidmat.
 </p>
 
 <div class="map-title">2. HKBP JATIASIH</div>
@@ -208,8 +199,6 @@ suasana ibadah yang khidmat.
 <p class="text">
 HKBP Jatiasih merupakan salah satu map gereja yang juga dibuat oleh RCC di Roblox.
 Map ini terinspirasi dari gereja HKBP Jatiasih yang berada di daerah Jatiasih, Bekasi.
-Pembuatan map ini bertujuan untuk menghadirkan suasana gereja HKBP di dalam dunia virtual 
-agar para anggota dapat merasakan suasana persekutuan walaupun berada di dalam game.
 </p>
 
 </div>
@@ -217,9 +206,11 @@ agar para anggota dapat merasakan suasana persekutuan walaupun berada di dalam g
 <div class="footer">
 
 <p style="text-align:right;">
-Ajibata, 2025<br><br><br>
+Ajibata, 2025
+<br><br><br>
 
-<b>Pdt. David Simarmata, M.Th</b><br>
+<b>Pdt. David Simarmata, M.Th</b>
+<br>
 Ephorus HKBPR
 </p>
 
@@ -227,8 +218,7 @@ Ephorus HKBPR
 
 <p style="text-align:center;font-size:15px;">
 Roblox Council Churches (RCC)<br>
-HKBP Roblox Community (HKBPR)<br>
-Virtual Church Community on Roblox Platform
+HKBP Roblox Community (HKBPR)
 </p>
 
 </div>
