@@ -25,30 +25,38 @@ border:3px solid black;
 box-shadow:0 0 20px rgba(0,0,0,0.25);
 background:white;
 position:relative;
-overflow:hidden;
 }
 
-/* Watermark logo */
+/* WATERMARK LOGO */
 
-.surat::before{
+.surat::after{
 content:"";
 position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-width:420px;
-height:420px;
-background:url("logo.jpeg") no-repeat center;
+width:300px;
+height:300px;
+background-image:url("logo.jpeg");
 background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
 opacity:0.5;
+pointer-events:none;
 z-index:0;
 }
 
-/* Supaya text berada di atas watermark */
+/* supaya text di atas watermark */
 
-.surat *{
+.surat > *{
 position:relative;
 z-index:1;
+}
+
+/* HEADER */
+
+.header{
+text-align:center;
 }
 
 .logo{
@@ -131,11 +139,8 @@ font-size:18px;
 <div class="surat">
 
 <div class="header">
-
 <img src="logo.jpeg" class="logo">
-
 <div class="title">PROFIL HKBPR</div>
-
 </div>
 
 <div class="line"></div>
@@ -159,11 +164,10 @@ map gereja, kegiatan komunitas, serta pengembangan persekutuan di dalam platform
 <div class="subjudul">Daftar Anggota HKBPR</div>
 
 <div class="list">
-
 <ol>
 <li>Pdt. David Simarmata, M.Th (Ephorus dan Pengurus HKBPR)</li>
 <li>St. Raymond Rajagukguk (Developer dan Sintua)</li>
-<li>St. Rendy Siagian (Sintua & Pemimpin Cyber Security Ajibata & Tim Pendukung)</li>
+<li>St. Rendy Siagian (Sintua & Pemimpin Cyber Security Ajibata)</li>
 <li>St. Morieno Hutagalung (Sintua)</li>
 <li>St. Milfa Purba (Sintua)</li>
 <li>St. Rendy Adicipto (Sintua)</li>
@@ -184,7 +188,6 @@ map gereja, kegiatan komunitas, serta pengembangan persekutuan di dalam platform
 <li>Pdt. Frederick Matthew (Pendeta)</li>
 <li>St. Heber Pasaribu (Sintua)</li>
 </ol>
-
 </div>
 
 <div class="subjudul">Beberapa Map Yang Pernah Dibuat RCC (HKBP)</div>
