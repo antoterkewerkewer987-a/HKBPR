@@ -24,8 +24,6 @@ padding:60px;
 border:3px solid black;
 box-shadow:0 0 20px rgba(0,0,0,0.25);
 
-/* watermark logo + salib */
-
 background:
 linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92)),
 url("logo.jpeg"),
@@ -34,7 +32,6 @@ url("salib.png");
 background-repeat:no-repeat,no-repeat,no-repeat;
 background-position:center,center,top right;
 background-size:320px,320px,120px;
-
 }
 
 /* HEADER */
@@ -119,19 +116,32 @@ font-size:18px;
 
 .btn-sinode{
 display:inline-block;
-margin-top:15px;
-padding:12px 22px;
-background:#1f4fa3;
+margin-top:20px;
+padding:14px 26px;
+background:#4da6ff;
 color:white;
-font-size:17px;
+font-size:18px;
 text-decoration:none;
-border-radius:6px;
+border-radius:8px;
 font-weight:bold;
-transition:0.2s;
+box-shadow:0 0 10px #4da6ff;
+animation:glow 2s infinite alternate;
+transition:0.3s;
 }
 
 .btn-sinode:hover{
-background:#163a7a;
+background:#1f7ae0;
+transform:scale(1.05);
+}
+
+@keyframes glow{
+from{
+box-shadow:0 0 10px #4da6ff;
+}
+to{
+box-shadow:0 0 25px #4da6ff;
+}
+
 }
 
 </style>
@@ -179,12 +189,6 @@ Ibadah pertama dimulai pada tanggal <b>31 Agustus 2025</b> yang bertepatan denga
 Ibadah tersebut pertama kali dilayani oleh Ephorus HKBP pertama HKBPR yaitu 
 <b>Pdt. Scottie Siregar M.Th</b>.
 </p>
-
-<p>
-Sejak saat itu komunitas HKBPR terus berkembang dengan berbagai kegiatan ibadah 
-virtual, pembangunan map gereja HKBP di Roblox, serta pelayanan komunitas bagi 
-anggota yang ingin bersekutu di dalam dunia digital.
-</p>
 </div>
 
 <div class="subjudul">Struktur Organisasi HKBPR</div>
@@ -193,11 +197,6 @@ anggota yang ingin bersekutu di dalam dunia digital.
 <p>
 Struktur organisasi HKBPR dibentuk untuk mendukung pelayanan, pengelolaan komunitas, 
 serta kegiatan ibadah di dalam platform Roblox.
-</p>
-
-<p>
-Struktur ini terdiri dari Ephorus, Pendeta, Sintua, Calon Sintua, Calon Pendeta, 
-serta anggota jemaat yang turut berperan dalam pelayanan dan pengembangan komunitas.
 </p>
 </div>
 
@@ -231,46 +230,7 @@ serta anggota jemaat yang turut berperan dalam pelayanan dan pengembangan komuni
 </ol>
 </div>
 
-<div class="subjudul">Beberapa Map Yang Pernah Dibuat RCC (HKBP)</div>
-
-<div class="map">
-
-<div class="map-title">1. HKBP AJIBATA</div>
-<img src="Ajibata.jpeg">
-
-<p class="text">
-HKBP Ajibata merupakan salah satu map gereja HKBP yang dibuat oleh komunitas RCC di dalam Roblox.
-Map ini terinspirasi dari gereja HKBP Ajibata yang berada di daerah Ajibata, Sumatera Utara.
-</p>
-
-<div class="map-title">2. HKBP JATIASIH</div>
-<img src="Jatiasih.jpeg">
-
-<p class="text">
-HKBP Jatiasih merupakan salah satu map gereja yang juga dibuat oleh RCC di Roblox.
-Map ini terinspirasi dari gereja HKBP Jatiasih yang berada di daerah Jatiasih, Bekasi.
-</p>
-
-<div class="map-title">3. HKBP TOCHIGI</div>
-<img src="tochigi.png">
-
-<p class="text">
-HKBP Tochigi adalah gereja Huria Kristen Batak Protestan Yang berada di negara "jepang".
-HKBPR Terinspirasi membuat HKBP Tochigi karena HKBP Tochigi adalah gereja HKBP yang
-berada di luar negara, yaitu "Jepang" kiranya Tuhan memberkati setiap rumah ibadat
-</p>
-
-</div>
-
 <div class="footer">
-
-<p style="text-align:right;">
-Ajibata, 2025
-<br><br><br>
-<b>Pdt. David Simarmata, M.Th</b>
-<br>
-Ephorus HKBPR
-</p>
 
 <hr>
 
@@ -279,13 +239,13 @@ Roblox Council Churches (RCC)<br>
 HKBP Roblox Community (HKBPR)<br>
 <b>Credit: St.Rendy Siagian sebagai pembuat website</b><br>
 <b>dan Pdt.Nihon Sinaga sebagai orang yang berkontribusi untuk membuat website sinode</b>
-<br><br>
+</p>
 
+<div style="text-align:center;">
 <a href="https://sites.google.com/view/hkbproblox/halaman-muka" target="_blank" class="btn-sinode">
 Baca juga website sinode HKBPR
 </a>
-
-</p>
+</div>
 
 </div>
 
